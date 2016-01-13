@@ -1,0 +1,1 @@
+SELECT Invoice.Total, Customer.FirstName, Customer.LastName, Customer.Country, Employee.FirstName, Employee.LastName FROM Employee, Invoice, Customer WHERE Employee.EmployeeId == Customer.SupportRepId
