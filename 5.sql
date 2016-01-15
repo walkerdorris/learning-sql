@@ -1,1 +1,1 @@
-ELECT BillingCountry FROM Invoice WHERE BillingCountry == 'Norway' OR BillingCountry == 'Germany' OR BillingCountry == 'Brazil'
+SELECT BillingCountry FROM Invoice WHERE BillingCountry == 'Norway' OR BillingCountry == 'Germany' OR BillingCountry == 'Brazil'
