@@ -1,1 +1,1 @@
-~SELECT COUNT (InvoiceId)  FROM Invoice WHERE InvoiceId='37'
+SELECT COUNT (*)  FROM InvoiceLine WHERE InvoiceId='37'
