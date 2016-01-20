@@ -1,0 +1,1 @@
+SELECT Track.Name, Artist.Name, InvoiceLine.* FROM Track LEFT JOIN InvoiceLine, Artist, Album ON (Track.TrackId == InvoiceLine.TrackId AND Artist.ArtistId == Album.ArtistId AND Album.AlbumId == Track.AlbumId) GROUP BY InvoiceLine.InvoiceLineId
