@@ -1,0 +1,1 @@
+SELECT Track.Name as Track, Album.Title as Album, MediaType.Name as MediaType, Genre.Name as Genre FROM Track inner join Album, MediaType, Genre on Track.AlbumId = Album.AlbumId and Track.GenreId = Genre.GenreId and Track.MediaTypeId = MediaType.MediaTypeId group by Track.Name
