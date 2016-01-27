@@ -1,0 +1,1 @@
+select count(invoiceline.trackid), invoiceline.trackid, track.name from invoiceline join playlisttrack on invoiceline.trackid = playlisttrack.trackid join track on track.trackid = invoiceline.trackid group by invoiceline.trackid order by invoiceline.trackid desc limit 5
