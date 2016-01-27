@@ -1,0 +1,1 @@
+select sum(invoiceline.quantity), artist.name from invoiceline join track on invoiceline.trackid = track.trackid join album on track.albumid = album.albumid join artist on album.artistid = artist.artistid group by artist.artistid order by invoiceline.quantity desc limit 3
